@@ -16,6 +16,13 @@
   background-size: cover;
 }
 
+.MuiButton-label {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 20px;
+}
+
 @media (min-width: 768px) {
   body {
     background-image: url('./images/sunflower.jpeg');
@@ -27,5 +34,9 @@
     background-color: white;
     margin-top: 300px;
     width: 30%;
+  }
+
+  .MuiButton-label {
+    color: black;
   }
 }
