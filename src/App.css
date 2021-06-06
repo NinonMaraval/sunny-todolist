@@ -37,6 +37,6 @@
   }
 
   .MuiButton-label {
-    color: black;
+    text-decoration: black;
   }
 }
