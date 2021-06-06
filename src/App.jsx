@@ -9,7 +9,6 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    // fires when app component mounts to the DOM
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storageTodos) {
       setTodos(storageTodos);
@@ -17,12 +16,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // fires when todos array gets updated
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
   }, [todos]);
 
   function addTodo(todo) {
-    // adds new todo to beginning of todos array
     setTodos([todo, ...todos]);
   }
 
