@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import './components/AnimatedWelcome.css';
 import AddTodo from './components/AddTodo';
+import AnimatedWelcome from './components/AnimatedWelcome';
 import TodoList from './components/TodoList';
 
 const LOCAL_STORAGE_KEY = 'react-todo-list-todos';
@@ -42,6 +44,10 @@ function App() {
   }
 
   return (
+    <>
+    <div>
+      <AnimatedWelcome/>
+    </div>
     <div className='App'>
       <p>Today I have to</p>
 
@@ -52,6 +58,7 @@ function App() {
         toggleComplete={toggleComplete}
       />
     </div>
+    </>
   );
 }
 
